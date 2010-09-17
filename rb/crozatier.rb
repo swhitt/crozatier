@@ -12,6 +12,10 @@ session = GoogleSpreadsheet.login(credentials['username'], credentials['password
 spreadsheet = session.spreadsheet_by_key(credentials['spreadsheet_key'])
 ws = spreadsheet.worksheets[0]
 cols = {}
-(1..ws.num_cols).each {|i| cols[i] = ws[1,i].to_s.downcase.gsub(' ','_')}
+(1..ws.num_cols).each do |i|
+  index = ('A'..'Z').to_a[i-1]
+  name = ws[1,i]
+  cols[index] = name.downcase.gsub(' ','_')
+end
 
 ws.add_table(ws.title.downcase.gsub(' ','_'), ws.title, cols)
