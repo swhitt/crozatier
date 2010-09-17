@@ -1,0 +1,17 @@
+body {
+    font-family:'lucida grande',tahoma,arial,sans-serif;
+    font-size:12px;
+}
+a {
+color:#15428B;
+}
+a:link, a:visited {
+text-decoration:none;
+}
+a:hover {
+text-decoration:underline;
+}
+h1, p {
+  margin: 5px;
+}
+h1 { font-size: 15px;}
