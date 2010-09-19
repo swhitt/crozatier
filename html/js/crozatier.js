@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
     titleCollapse: true,
     floatable: false,
     split: false,
-    width: 300,
+    width: 320,
     minWidth: 100,
     stripeRows: true
   });

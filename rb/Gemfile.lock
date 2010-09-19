@@ -1,5 +1,7 @@
-PATH
-  remote: /Users/swhitt/Code/personal/google-spreadsheet-ruby
+GIT
+  remote: http://github.com/swhitt/google-spreadsheet-ruby.git
+  revision: 3fca43326884f2c07fe728ac93e2e5b5e511fefa
+  branch: nokogiri-and-fixes
   specs:
     google-spreadsheet-ruby (0.1.1)
       nokogiri (>= 1.4.3.1)
