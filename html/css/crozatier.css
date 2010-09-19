@@ -15,8 +15,9 @@ h1, p {
   margin: 10px;
 }
 h1 { font-size: 20px;}
-#information-text h1 { font-size: 18px;}
-#information-text h1, #information-text p { margin: 5px;}
+.information-text .langchange { float: right; margin-right: 5px;}
+.information-text h1 { font-size: 18px;}
+.information-text h1, .information-text p { margin: 5px;}
 #crozatier-tabs table.sell-figs { margin: 10px; border: 1px solid #999;}
 #crozatier-tabs table.sell-figs td { padding: 0px 5px; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
 #crozatier-tabs table.sell-figs tr.odd td { background-color: #EAEAEA;}
