@@ -10,9 +10,10 @@ jQuery(document).ready(function($) {
   var grid = new Ext.grid.GridPanel({
     store: store,
     columns : [
-    {header: 'Name', dataIndex: 'name', width: 160},
-    {header: 'Brand', dataIndex: 'brand', width: 85},
-    {header: 'Cost', dataIndex: 'asking_cost', width: 50, align: 'right'}
+      {header: 'Name', dataIndex: 'name', width: 110},
+      {header: 'Brand', dataIndex: 'brand', width: 75},
+      {header: 'Model', dataIndex: 'model', width: 100},
+      {header: 'Cost', dataIndex: 'asking_cost', width: 50, align: 'right'}
     ],
     sm: new Ext.grid.RowSelectionModel({singleSelect: true}),
     region: 'west',
@@ -20,8 +21,8 @@ jQuery(document).ready(function($) {
     collapsible: true,
     titleCollapse: true,
     floatable: false,
-    split: false,
-    width: 320,
+    split: true,
+    width: 360,
     minWidth: 100,
     stripeRows: true
   });
@@ -33,17 +34,17 @@ jQuery(document).ready(function($) {
     } else {
 
       var stuffTplMarkup = [
-      '<h1>{name}</h1>',
-      '<p>{details}</p>',
-      '<table class="sell-figs">',
-      '<tr class="even"><td>Brand</td><td>{brand}</td></tr>',
-      '<tr class="odd"><td>Model</td><td>{model}</td></tr>',
-      '<tr class="even"><td>Have docs?</td><td>{docs}</td></tr>',
-      '<tr class="odd"><td>Purchase Date</td><td>{purchase_date}</td></tr>',
-      '<tr class="even"><td>Original Cost</td><td>{original_cost}</td></tr>',
-      '<tr class="odd"><td>Asking Cost</td><td>{asking_cost}</td></tr>',
-      '</table>',
-      '<div id="{slug}-rest"></div>'
+        '<h1>{name}</h1>',
+        '<p>{details}</p>',
+        '<table class="sell-figs">',
+        '<tr class="even"><td>Brand</td><td>{brand}</td></tr>',
+        '<tr class="odd"><td>Model</td><td>{model}</td></tr>',
+        '<tr class="even"><td>Have docs?</td><td>{docs}</td></tr>',
+        '<tr class="odd"><td>Purchase Date</td><td>{purchase_date}</td></tr>',
+        '<tr class="even"><td>Original Cost</td><td>{original_cost}</td></tr>',
+        '<tr class="odd"><td>Asking Cost</td><td>{asking_cost}</td></tr>',
+        '</table>',
+        '<div id="{slug}-rest"></div>'
       ];
 
       var stuffTpl = new Ext.Template(stuffTplMarkup);
@@ -54,7 +55,22 @@ jQuery(document).ready(function($) {
         closable:true,
         id: tabName
         }).show();
-      }
+      };
+      
+      var restEl = $('#'+r.data.slug+'-rest');
+      $.ajax({
+        url: 'details/'+r.data.slug+'.html',
+        dataType: 'html',
+        success: function(data) {
+          restEl.html(data);
+        },
+        beforeSend: function() {
+          restEl.html('<p>Loading... </p>');
+        },
+        error: function() {
+          restEl.html("<p>There is no extra information about the "+ r.data.name +" yet. If you're interested, send me an email for more information.");
+        }
+      });
   });
 
 
@@ -77,8 +93,9 @@ jQuery(document).ready(function($) {
       xtype: 'tabpanel',
       id: 'crozatier-tabs',
       activeTab: 0,
+      enableTabScroll:true,
       items: {
-        title: 'Key Information - Informations clés',
+        title: 'Key Information',
         contentEl: 'key-information',
         id: 'key-information-tab'
       }
