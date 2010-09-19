@@ -1,12 +1,17 @@
+PATH
+  remote: /Users/swhitt/Code/personal/google-spreadsheet-ruby
+  specs:
+    google-spreadsheet-ruby (0.1.1)
+      nokogiri (>= 1.4.3.1)
+      oauth (>= 0.3.6)
+
 GEM
   remote: http://rubygems.org/
   specs:
     columnize (0.3.1)
-    google-spreadsheet-ruby (0.1.1)
-      hpricot (>= 0.3)
-      oauth (>= 0.3.6)
-    hpricot (0.8.2)
+    json (1.4.6)
     linecache (0.43)
+    nokogiri (1.4.3.1)
     oauth (0.4.3)
     ruby-debug (0.10.3)
       columnize (>= 0.1)
@@ -18,5 +23,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  google-spreadsheet-ruby
+  google-spreadsheet-ruby!
+  json
   ruby-debug

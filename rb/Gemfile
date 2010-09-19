@@ -1,5 +1,6 @@
 source "http://rubygems.org"
-gem 'google-spreadsheet-ruby'
+gem 'google-spreadsheet-ruby', :path => "/Users/swhitt/Code/personal/google-spreadsheet-ruby"
+gem 'json'
 group :development do
   gem 'ruby-debug'
 end
