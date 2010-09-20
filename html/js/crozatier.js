@@ -15,31 +15,41 @@ Crozatier.lang = (getParameterByName('lang') == 'fr') ? 'fr' : 'en';
 jQuery(document).ready(function($) {
   
   
-  var store = new Ext.data.JsonStore({
-    autoDestroy: true,
-    data: Crozatier,
-    storeId: 'crozatierStore',
+  var reader = new Ext.data.JsonReader({
     root: 'stuff',
     idProperty: 'slug',
-    fields: ['slug', 'name', 'french_name', 'brand', 'model', 'details', 'docs', 'purchase_date', 'original_cost', 'asking_cost', 'delta', 'percent_discount']
+    fields: [
+    'slug', 'category', 'french_category', 'name', 'french_name', 'brand', 'model', 'details', 'french_details', 
+    'rest_localized', 'docs', 'purchase_date', 'original_cost', 'asking_cost', 'delta', 'percent_discount']
+  });
+  var store = new Ext.data.GroupingStore({
+    autoDestroy: true,
+    reader: reader,
+    data: Crozatier,
+    storeId: 'crozatierStore',
+    groupField: (Crozatier.lang == 'en') ? 'category' : 'french_category'
   });
   var cols;
   if(Crozatier.lang == 'en') {
     cols = [
-      {header: 'Name', dataIndex: 'name', width: 110},
+      {header: 'Category', dataIndex: 'category', width: 100},
+      {header: 'Description', dataIndex: 'name', width: 110},
       {header: 'Brand', dataIndex: 'brand', width: 75},
       {header: 'Model', dataIndex: 'model', width: 100},
       {header: 'Cost', dataIndex: 'asking_cost', width: 50, align: 'right'}
     ]
   } else {
     cols = [
-      {header: 'Nom', dataIndex: 'french_name', width: 110},
+      {header: 'Catégorie', dataIndex: 'french_category', width: 100},
+      {header: 'Description', dataIndex: 'french_name', width: 110},
       {header: 'Marque', dataIndex: 'brand', width: 75},
       {header: 'Modèle', dataIndex: 'model', width: 100},
       {header: 'Coût', dataIndex: 'asking_cost', width: 50, align: 'right'}
     ]
   }
+  
   var grid = new Ext.grid.GridPanel({
+    id: 'itemListGrid',
     store: store,
     columns : cols,
     sm: new Ext.grid.RowSelectionModel({singleSelect: true}),
@@ -51,9 +61,16 @@ jQuery(document).ready(function($) {
     split: true,
     width: 360,
     minWidth: 100,
-    stripeRows: true
+    stripeRows: true,
+    view: new Ext.grid.GroupingView({
+        forceFit:true,
+        enableGroupingMenu: false,
+      	hideGroupedColumn: true,
+      	showGroupName: false,
+        groupTextTpl: '{text} ({[values.rs.length]})'
+    })
   });
-
+  
   grid.getSelectionModel().on('rowselect', function(sm, rowIdx, r) {
     var tabName = r.data.slug + '-tab';
     if(Ext.getCmp(tabName)) {
@@ -79,7 +96,7 @@ jQuery(document).ready(function($) {
       } else {
         stuffTplMarkup = [
           '<h1>{french_name}</h1>',
-          '<p>{details}</p>',
+          '<p>{french_details}</p>',
           '<table class="sell-figs">',
           '<tr class="even"><td>Marque</td><td>{brand}</td></tr>',
           '<tr class="odd"><td>Modèle</td><td>{model}</td></tr>',
@@ -95,7 +112,7 @@ jQuery(document).ready(function($) {
       var stuffTpl = new Ext.Template(stuffTplMarkup);
 
       Ext.getCmp('crozatier-tabs').add({
-        title: r.data.name,
+        title: Crozatier.lang == 'en' ? r.data.name : r.data.french_name,
         html: stuffTpl.apply(r.data),
         closable:true,
         id: tabName
@@ -103,17 +120,25 @@ jQuery(document).ready(function($) {
       };
       
       var restEl = $('#'+r.data.slug+'-rest');
+      var restUrl = (r.data.rest_localized == 'yes') ? 'details/'+r.data.slug+'-'+Crozatier.lang+'.html' : 'details/'+r.data.slug+'.html';
+      
       $.ajax({
-        url: 'details/'+r.data.slug+'-'+Crozatier.lang+'.html',
+        url: restUrl,
         dataType: 'html',
         success: function(data) {
           restEl.html(data);
         },
         beforeSend: function() {
-          restEl.html('<p>Loading... </p>');
+          restEl.html(Crozatier.lang == 'en' ? '<p>Loading... </p>' : '<p>Chargement... </p>');
         },
         error: function() {
-          restEl.html("<p>There is no extra information about the "+ r.data.name +" yet. If you're interested, send me an email for more information.");
+          var text;
+          if (Crozatier.lang == 'en') {
+            text = "<p>There is no extra information about the "+ r.data.name +" yet. If you're interested, send me an email for more information.";
+          } else {
+            text = "<p>Il n'y a pas d'informations supplémentaires sur "+r.data.french_name+" pour le moment. Si vous êtes intéressés, envoyez moi un email pour plus d'informations.</p>";
+          }
+          restEl.html(text);
         }
       });
   });
