@@ -91,7 +91,7 @@ jQuery(document).ready(function($) {
           '<tr class="even"><td>Original Cost</td><td>{original_cost}</td></tr>',
           '<tr class="odd"><td>Asking Cost</td><td>{asking_cost}</td></tr>',
           '</table>',
-          '<div id="{slug}-rest"></div>'
+          '<div class ="rest-desc" id="{slug}-rest"></div>'
         ];
       } else {
         stuffTplMarkup = [
@@ -105,7 +105,7 @@ jQuery(document).ready(function($) {
           '<tr class="even"><td>Le coût initial</td><td>{original_cost}</td></tr>',
           '<tr class="odd"><td>Coût</td><td>{asking_cost}</td></tr>',
           '</table>',
-          '<div id="{slug}-rest"></div>'
+          '<div class ="rest-desc" id="{slug}-rest"></div>'
         ];
       }
 
@@ -115,7 +115,10 @@ jQuery(document).ready(function($) {
         title: Crozatier.lang == 'en' ? r.data.name : r.data.french_name,
         html: stuffTpl.apply(r.data),
         closable:true,
-        id: tabName
+        id: tabName,
+        xtype: 'panel',
+        autoScroll: true
+        
         }).show();
       };
       
@@ -167,7 +170,9 @@ jQuery(document).ready(function($) {
       items: {
         title: (Crozatier.lang == 'en') ? 'Key Information' : 'Informations Clés',
         contentEl: 'key-information-'+Crozatier.lang,
-        id: 'key-information-tab'
+        id: 'key-information-tab',
+        xtype: 'panel',
+        autoScroll: true
       }
     }]
   });

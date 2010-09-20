@@ -21,3 +21,4 @@ h1 { font-size: 20px;}
 #crozatier-tabs table.sell-figs { margin: 10px; border: 1px solid #999;}
 #crozatier-tabs table.sell-figs td { padding: 0px 5px; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
 #crozatier-tabs table.sell-figs tr.odd td { background-color: #EAEAEA;}
+.rest-desc img { margin: 10px;}
