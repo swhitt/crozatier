@@ -14,7 +14,6 @@ Crozatier.lang = (getParameterByName('lang') == 'fr') ? 'fr' : 'en';
 
 jQuery(document).ready(function($) {
   
-  
   var reader = new Ext.data.JsonReader({
     root: 'stuff',
     idProperty: 'slug',

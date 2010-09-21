@@ -11,13 +11,13 @@ text-decoration:none;
 a:hover {
 text-decoration:underline;
 }
-h1, p {
+h1, h2, p {
   margin: 10px;
 }
 h1 { font-size: 20px;}
 .information-text .sup-info { float: right; margin-right: 5px;}
 .information-text h1 { font-size: 18px;}
-.information-text h1, .information-text p { margin: 5px;}
+.information-text h1, .information-text p, .information-text h2 { margin: 5px;}
 #crozatier-tabs table.sell-figs { margin: 10px; border: 1px solid #999;}
 #crozatier-tabs table.sell-figs td { padding: 0px 5px; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
 #crozatier-tabs table.sell-figs tr.odd td { background-color: #EAEAEA;}
