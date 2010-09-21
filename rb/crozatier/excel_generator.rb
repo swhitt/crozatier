@@ -7,6 +7,7 @@ class ExcelGenerator
   end
   
   def create_spreadsheet(filename, columns=[])
+    puts "Generating spreadsheet."
     book = Spreadsheet::Workbook.new
     sheet1 = book.create_worksheet :name => 'Item List'
     
@@ -27,7 +28,7 @@ class ExcelGenerator
       row_data = columns.map{|col_def| item[col_def[:index]]}
       sheet1.row(i+1).concat(row_data)
     end
-    
     book.write filename
+    puts "Saved spreadsheet to #{filename}."
   end
 end

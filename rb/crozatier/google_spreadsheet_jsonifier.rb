@@ -10,8 +10,8 @@ class GoogleSpreadsheetJsonifier
   end
   
   def process
-    # delete_table_if_exists
-    # create_table
+    delete_table_if_exists
+    create_table
     create_table_json
   end
   
@@ -47,7 +47,7 @@ class GoogleSpreadsheetJsonifier
   end
   
   def create_table_json
-    recs = detect_table.records
+    recs = @table.records
     @processed_recs = []
     recs.each do |rec|
       processed_rec = {}
