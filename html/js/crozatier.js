@@ -128,6 +128,7 @@ jQuery(document).ready(function($) {
       $.ajax({
         url: restUrl,
         dataType: 'html',
+        cache: false,
         success: function(data) {
           restEl.html(data);
         },
