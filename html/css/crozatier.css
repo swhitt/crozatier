@@ -2,6 +2,7 @@ body {
     font-family:'lucida grande',tahoma,arial,sans-serif;
     font-size:12px;
 }
+img, a img { border: 0;}
 a {
 color:#15428B;
 }
