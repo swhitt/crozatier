@@ -9,10 +9,12 @@ class GoogleSpreadsheetJsonifier
     connect
   end
   
-  def process
-    delete_table_if_exists
-    create_table
-    create_table_json
+  def process(regen_table=true)
+    if(regen_table)
+      delete_table_if_exists
+      create_table
+    end
+    create_table_json(regen_table)
   end
   
   def write_to_file(filename)
@@ -46,8 +48,8 @@ class GoogleSpreadsheetJsonifier
     @table = @ws.add_table(@ws.title.downcase.gsub(' ','_'), @ws.title, cols, :num_rows => (@ws.num_rows - 2))
   end
   
-  def create_table_json
-    recs = @table.records
+  def create_table_json(table_regenned)
+    recs = (table_regenned ? @table : detect_table).records
     @processed_recs = []
     recs.each do |rec|
       processed_rec = {}

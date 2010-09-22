@@ -25,7 +25,11 @@ class ExcelGenerator
     sheet1.row(0).concat(columns.map{|c| c[:header]})
     
     @data.each_with_index do |item, i|
-      row_data = columns.map{|col_def| item[col_def[:index]]}
+      row_data = columns.map do |col_def| 
+        d = item[col_def[:index]].to_s
+        d.gsub!('<br/>',' - ') if col_def[:nuke_breaks] == true
+        d
+      end
       sheet1.row(i+1).concat(row_data)
     end
     book.write filename

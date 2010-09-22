@@ -10,7 +10,7 @@ function getParameterByName(name) {
 }
 
 
-Crozatier.lang = (getParameterByName('lang') == 'fr') ? 'fr' : 'en';
+Crozatier.lang = (getParameterByName('lang') == 'en') ? 'en' : 'fr';
 
 jQuery(document).ready(function($) {
   
@@ -93,6 +93,8 @@ jQuery(document).ready(function($) {
           '<div class ="rest-desc" id="{slug}-rest"></div>'
         ];
       } else {
+        if(r.data.docs == 'yes') {r.data.docs = 'oui'}
+        if(r.data.docs == 'no') {r.data.docs = 'non'}
         stuffTplMarkup = [
           '<h1>{french_name}</h1>',
           '<p>{french_details}</p>',
