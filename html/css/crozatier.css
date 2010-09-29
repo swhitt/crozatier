@@ -16,7 +16,7 @@ h1, h2, p {
   margin: 10px;
 }
 h1 { font-size: 20px;}
-#crozatier-tabs h2 { font-size: 16px; color: #ee4444;}
+#crozatier-tabs h2.sold { font-size: 16px; color: #ee4444;}
 
 .information-text .sup-info { float: right; margin-right: 5px;}
 .information-text h1 { font-size: 18px;}
@@ -25,3 +25,4 @@ h1 { font-size: 20px;}
 #crozatier-tabs table.sell-figs td { padding: 0px 5px; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
 #crozatier-tabs table.sell-figs tr.odd td { background-color: #EAEAEA;}
 .rest-desc img { margin: 10px;}
+div.sold-row table td { color: #a44; text-decoration: line-through;}

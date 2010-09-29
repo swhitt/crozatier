@@ -66,7 +66,12 @@ jQuery(document).ready(function($) {
         enableGroupingMenu: false,
       	hideGroupedColumn: true,
       	showGroupName: false,
-        groupTextTpl: '{text} ({[values.rs.length]})'
+        groupTextTpl: '{text} ({[values.rs.length]})',
+        getRowClass: function(rec,idx,rowParams,store) {
+          if(rec.data.sold == 'yes') {
+            return 'sold-row';
+          }
+        }
     })
   });
   
@@ -80,7 +85,7 @@ jQuery(document).ready(function($) {
       
       if(Crozatier.lang == 'en') {
         stuffTplMarkup = ['<h1>{name}</h1>'];
-        if(r.data.sold == 'yes') {stuffTplMarkup.push('<h2> SOLD! </h2>')}
+        if(r.data.sold == 'yes') {stuffTplMarkup.push('<h2 class="sold"> SOLD! </h2>')}
         stuffTplMarkup.push('<p>{details}</p>',
           '<table class="sell-figs">',
           '<tr class="even"><td>Brand</td><td>{brand}</td></tr>',
@@ -95,7 +100,7 @@ jQuery(document).ready(function($) {
         if(r.data.docs == 'yes') {r.data.docs = 'oui'}
         if(r.data.docs == 'no') {r.data.docs = 'non'}
         stuffTplMarkup = ['<h1>{french_name}</h1>'];
-        if(r.data.sold == 'yes') {stuffTplMarkup.push('<h2> VENDU ! </h2>')}
+        if(r.data.sold == 'yes') {stuffTplMarkup.push('<h2 class="sold"> VENDU ! </h2>')}
         
         stuffTplMarkup.push('<p>{french_details}</p>',
           '<table class="sell-figs">',
