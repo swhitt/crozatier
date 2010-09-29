@@ -1,11 +1,13 @@
 require 'rubygems'
 require 'bundler'
 Bundler.setup
+require 'ruby-debug'
+Debugger.start
 
 require File.dirname(__FILE__) + "/crozatier/google_spreadsheet_jsonifier"
 require File.dirname(__FILE__) + "/crozatier/excel_generator"
 
-cc = GoogleSpreadsheetJsonifier.new
+cc = GoogleSpreadsheetJsonifier.new(File.dirname(__FILE__) + "/.crozatier_auth.token")
 cc.process
 cc.write_to_file(File.dirname(__FILE__) + "/../html/js/stuff-data.js")
 

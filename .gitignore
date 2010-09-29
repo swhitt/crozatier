@@ -1,4 +1,4 @@
 rb/.bundle
-rb/authentication.yml
 rb/.rvmrc
+rb/.crozatier_auth.token
 

@@ -10,12 +10,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "52L<br/>White<br/>6 cooking modes (including 3D heat) with clock<br/>Class A",
     "asking_cost": "€ 175",
     "percent_discount": "50.1651668754984%",
-    "purchase_date": "22 Dec 2008",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "22 Dec 2008",
     "original_cost": "€ 351.16",
     "docs": "",
     "french_name": "Four",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "VIVA",
@@ -28,12 +29,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Fridge 225L, Freezer 87L with 3 drawers. Fridge on top",
     "asking_cost": "€ 180",
     "percent_discount": "56.9439793331101%",
-    "purchase_date": "22 Dec 2008",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "22 Dec 2008",
     "original_cost": "€ 418.06",
     "docs": "yes",
     "french_name": "Frigo / Congélateur",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Siemens",
@@ -46,12 +48,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "9 place-settings<br/>4 programs",
     "asking_cost": "€ 180",
     "percent_discount": "57.7880962431406%",
-    "purchase_date": "22 Dec 2008",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "22 Dec 2008",
     "original_cost": "€ 426.42",
     "docs": "yes",
     "french_name": "Lave-vaisselle",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Siemens",
@@ -64,12 +67,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Combo washer-dryer.<br/>5kg capacity.<br/>8 buttons<br/>15 programs.",
     "asking_cost": "€ 325",
     "percent_discount": "52.0125210406638%",
-    "purchase_date": "22 Dec 2008",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "22 Dec 2008",
     "original_cost": "€ 677.26",
     "docs": "",
     "french_name": "Lave-linge séchant",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Glem",
@@ -82,12 +86,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "2 surfaces with front controls<br/>Steel frame",
     "asking_cost": "€ 100",
     "percent_discount": "64.6155479282403%",
-    "purchase_date": "22 Dec 2008",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "22 Dec 2008",
     "original_cost": "€ 282.61",
     "docs": "yes",
     "french_name": "Table de Cuisson (en verre)",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Cuisines Mondial Kit",
@@ -100,12 +105,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Includes a countertop",
     "asking_cost": "€ 400",
     "percent_discount": "",
-    "purchase_date": "Nov 2009",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "Nov 2009",
     "original_cost": "€ 1140.75",
     "docs": "",
     "french_name": "Armoires de cuisine",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "VIVA",
@@ -118,12 +124,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Stainless Steel<br/>1 motor with 3 speeds<br/> 40 watt lightbulb<br/>2 metallic grease filters (washable in dishwasher)",
     "asking_cost": "€ 40",
     "percent_discount": "52.1531100478469%",
-    "purchase_date": "22 Dec 2008",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "22 Dec 2008",
     "original_cost": "€ 83.60",
     "docs": "",
     "french_name": "Hotte de cuisine",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Whirlpool",
@@ -136,12 +143,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Front clock / time display has a loose connection (oven still works fine)",
     "asking_cost": "€ 40",
     "percent_discount": "",
-    "purchase_date": "Nov 2009",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "Nov 2009",
     "original_cost": "",
     "docs": "",
     "french_name": "Micro-onde",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Cuisinart",
@@ -154,12 +162,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "2 sets of surfaces, Grease collector cups. NOTE: plastic back left leg missing, still works. ",
     "asking_cost": "€ 40",
     "percent_discount": "76.3551457114146%",
-    "purchase_date": "9 Mar 2009",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "9 Mar 2009",
     "original_cost": "€ 169.17",
     "docs": "yes",
     "french_name": "Gril sandwich",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Kenwood",
@@ -172,12 +181,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Plastic, has a valve on the front for smoothies<br/>2 Speeds + Pulse",
     "asking_cost": "€ 15",
     "percent_discount": "",
-    "purchase_date": "Late 2009",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "Late 2009",
     "original_cost": "",
     "docs": "yes",
     "french_name": "Mixer",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": "yes"
   },
   {
     "brand": "Philips",
@@ -188,14 +198,15 @@ Crozatier = {}; Crozatier.stuff = [
     "category": "1 - Kitchen Appliances",
     "delta": "",
     "details": "",
-    "asking_cost": "€ 30",
+    "asking_cost": "€ 22",
     "percent_discount": "",
-    "purchase_date": "Summer 2009",
     "french_category": "1 - Appareils de cuisine",
+    "purchase_date": "Summer 2009",
     "original_cost": "approx € 60",
     "docs": "",
     "french_name": "Robot de cuisine",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Dyson",
@@ -208,12 +219,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Bagless vacuum<br/>1400 watts",
     "asking_cost": "€ 95",
     "percent_discount": "58.8013357040635%",
-    "purchase_date": "29 Jan 2009",
     "french_category": "2 - Appareils électroménagers",
+    "purchase_date": "29 Jan 2009",
     "original_cost": "€ 230.59",
     "docs": "yes",
     "french_name": "Aspirateur",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": "yes"
   },
   {
     "brand": "Aircoon",
@@ -226,12 +238,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "With remote, air/water exhaust tube and sash window kit.",
     "asking_cost": "€ 140",
     "percent_discount": "56.1128526645768%",
-    "purchase_date": "1 Jul 2009",
     "french_category": "2 - Appareils électroménagers",
+    "purchase_date": "1 Jul 2009",
     "original_cost": "€ 319",
     "docs": "yes",
     "french_name": "Climatiseur",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": "yes"
   },
   {
     "brand": "Calor",
@@ -244,12 +257,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Has place for mosquito deterrent. We've only used it as a normal fan so we're not sure how well it works.",
     "asking_cost": "€ 30",
     "percent_discount": "",
-    "purchase_date": "Summer 2009",
     "french_category": "2 - Appareils électroménagers",
+    "purchase_date": "Summer 2009",
     "original_cost": "",
     "docs": "",
     "french_name": "Ventilateur sur pied",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": "yes"
   },
   {
     "brand": "Calor",
@@ -262,12 +276,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Has a place for scent block. We've never used this feature so we're not sure how well it works.",
     "asking_cost": "€ 15",
     "percent_discount": "",
-    "purchase_date": "Summer 2009",
     "french_category": "2 - Appareils électroménagers",
+    "purchase_date": "Summer 2009",
     "original_cost": "",
     "docs": "",
     "french_name": "Ventilateur de table",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": "yes"
   },
   {
     "brand": "Addex",
@@ -280,12 +295,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Travel style, folds in half for easy storage.",
     "asking_cost": "€ 10",
     "percent_discount": "",
-    "purchase_date": "Oct 2008",
     "french_category": "3 - Appareils électriques",
+    "purchase_date": "Oct 2008",
     "original_cost": "",
     "docs": "",
     "french_name": "Sèche-cheveux",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Remington",
@@ -298,12 +314,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "",
     "asking_cost": "€ 20",
     "percent_discount": "",
-    "purchase_date": "Oct 2008",
     "french_category": "3 - Appareils électriques",
+    "purchase_date": "Oct 2008",
     "original_cost": "",
     "docs": "",
     "french_name": "Lisseurs",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Bionaire",
@@ -316,12 +333,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "",
     "asking_cost": "€ 20",
     "percent_discount": "",
-    "purchase_date": "Early 2009",
     "french_category": "3 - Appareils électriques",
+    "purchase_date": "Early 2009",
     "original_cost": "approx. € 60",
     "docs": "",
     "french_name": "Humidificateur",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Black&Decker",
@@ -334,12 +352,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "White/Grey with charger",
     "asking_cost": "€ 30",
     "percent_discount": "50%",
-    "purchase_date": "15 Nov 2008",
     "french_category": "4 - Appareils électroménagers",
+    "purchase_date": "15 Nov 2008",
     "original_cost": "€ 60",
     "docs": "yes",
     "french_name": "Aspirateur de table",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": "yes"
   },
   {
     "brand": "Skil",
@@ -352,12 +371,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "550 Watt, 13 mm with keyless chuck and variable speed control",
     "asking_cost": "€ 15",
     "percent_discount": "",
-    "purchase_date": "Nov 2009",
     "french_category": "4 - Appareils électroménagers",
+    "purchase_date": "Nov 2009",
     "original_cost": "",
     "docs": "",
     "french_name": "Perceuse à percussion",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Philips",
@@ -370,12 +390,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "2000W",
     "asking_cost": "€ 12",
     "percent_discount": "",
-    "purchase_date": "Late 2008",
     "french_category": "4 - Appareils électroménagers",
+    "purchase_date": "Late 2008",
     "original_cost": "",
     "docs": "",
     "french_name": "Fer à repasser",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": "yes"
   },
   {
     "brand": "Ikea",
@@ -388,12 +409,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "",
     "asking_cost": "€ 10",
     "percent_discount": "",
-    "purchase_date": "Early 2009",
     "french_category": "5 - Éclairage",
+    "purchase_date": "Early 2009",
     "original_cost": "",
     "docs": "",
     "french_name": "Lampes murales",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Ikea",
@@ -406,12 +428,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "5x Philips fluorescent lightbulbs and 3x Ikea flourescent lightbulbs available also.",
     "asking_cost": "€ 10",
     "percent_discount": "",
-    "purchase_date": "Nov 2008",
     "french_category": "5 - Éclairage",
+    "purchase_date": "Nov 2008",
     "original_cost": "€ 30",
     "docs": "",
     "french_name": "Plafonnier",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Ikea",
@@ -424,12 +447,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Red",
     "asking_cost": "€ 20",
     "percent_discount": "",
-    "purchase_date": "Nov 2008",
     "french_category": "5 - Éclairage",
+    "purchase_date": "Nov 2008",
     "original_cost": "€ 45",
     "docs": "",
     "french_name": "Suspension à lumière",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Assorted",
@@ -442,12 +466,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Various. More details to come.",
     "asking_cost": "",
     "percent_discount": "",
-    "purchase_date": "",
     "french_category": "6 - Électronique",
+    "purchase_date": "",
     "original_cost": "",
     "docs": "",
     "french_name": "Cordons électriques",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": "yes"
   },
   {
     "brand": "Philips",
@@ -460,12 +485,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Antenna wire broken but still seems to work fine.",
     "asking_cost": "€ 5",
     "percent_discount": "",
-    "purchase_date": "Summer 2009",
     "french_category": "6 - Électronique",
+    "purchase_date": "Summer 2009",
     "original_cost": "approx € 15",
     "docs": "",
     "french_name": "Radio-réveil",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": "yes"
   },
   {
     "brand": "Ikea",
@@ -478,12 +504,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Black. 3pc 55cm (1 unopened), 1pc 185cm",
     "asking_cost": "€ 10",
     "percent_discount": "",
-    "purchase_date": "Nov 2009",
     "french_category": "7 - Rangement, mobilier, divers",
+    "purchase_date": "Nov 2009",
     "original_cost": "",
     "docs": "",
     "french_name": "Étagères murales",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "?",
@@ -496,12 +523,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Purchased at BHV. Resizable, spring-loaded.",
     "asking_cost": "€ 10",
     "percent_discount": "",
-    "purchase_date": "Nov 2008",
     "french_category": "7 - Rangement, mobilier, divers",
+    "purchase_date": "Nov 2008",
     "original_cost": "",
     "docs": "",
     "french_name": "Tringle de rideaux douche",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Ikea",
@@ -514,12 +542,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Blue curtains are available if you'd like, for free (although they have cat hair on them).",
     "asking_cost": "€ 10",
     "percent_discount": "",
-    "purchase_date": "Nov 2008",
     "french_category": "7 - Rangement, mobilier, divers",
+    "purchase_date": "Nov 2008",
     "original_cost": "",
     "docs": "",
     "french_name": "Tringle à rideau",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Marchioro",
@@ -532,12 +561,13 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Colored Manila, with black balcony support.",
     "asking_cost": "€ 10",
     "percent_discount": "",
-    "purchase_date": "Spring 2009",
     "french_category": "7 - Rangement, mobilier, divers",
+    "purchase_date": "Spring 2009",
     "original_cost": "approx € 25",
     "docs": "",
     "french_name": "Jardinières",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   },
   {
     "brand": "Monoprix",
@@ -550,11 +580,12 @@ Crozatier = {}; Crozatier.stuff = [
     "details": "Folding",
     "asking_cost": "€ 15",
     "percent_discount": "",
-    "purchase_date": "Summer 2009",
     "french_category": "7 - Rangement, mobilier, divers",
+    "purchase_date": "Summer 2009",
     "original_cost": "approx € 25",
     "docs": "",
     "french_name": "Tabourets pliants",
-    "rest_localized": ""
+    "rest_localized": "",
+    "sold": ""
   }
 ];

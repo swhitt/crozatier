@@ -16,6 +16,8 @@ h1, h2, p {
   margin: 10px;
 }
 h1 { font-size: 20px;}
+#crozatier-tabs h2 { font-size: 16px; color: #ee4444;}
+
 .information-text .sup-info { float: right; margin-right: 5px;}
 .information-text h1 { font-size: 18px;}
 .information-text h1, .information-text p, .information-text h2 { margin: 5px;}

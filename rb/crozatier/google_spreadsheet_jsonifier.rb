@@ -5,7 +5,8 @@ require 'json'
 class GoogleSpreadsheetJsonifier
   attr_accessor :session, :spreadsheet, :ws, :table, :processed_recs
   
-  def initialize
+  def initialize(session_filename)
+    @session_filename = session_filename
     connect
   end
   
@@ -25,9 +26,9 @@ class GoogleSpreadsheetJsonifier
   
   def connect
     puts 'Connecting to Google.'
-    credentials = YAML.load_file('authentication.yml')
-    @session = GoogleSpreadsheet.login(credentials['username'], credentials['password'])
-    @spreadsheet = @session.spreadsheet_by_key(credentials['spreadsheet_key'])
+    options = YAML.load_file('options.yml')
+    @session = GoogleSpreadsheet.saved_session(@session_filename)
+    @spreadsheet = @session.spreadsheet_by_key(options['spreadsheet_key'])
     @ws = @spreadsheet.worksheets[0]
   end
   

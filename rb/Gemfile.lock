@@ -1,7 +1,5 @@
-GIT
-  remote: http://github.com/swhitt/google-spreadsheet-ruby.git
-  revision: 3fca43326884f2c07fe728ac93e2e5b5e511fefa
-  branch: nokogiri-and-fixes
+PATH
+  remote: /Users/swhitt/Code/personal/google-spreadsheet-ruby
   specs:
     google-spreadsheet-ruby (0.1.1)
       nokogiri (>= 1.4.3.1)
@@ -10,9 +8,17 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    columnize (0.3.1)
+    highline (1.6.1)
     json (1.4.6)
+    linecache (0.43)
     nokogiri (1.4.3.1)
     oauth (0.4.3)
+    ruby-debug (0.10.3)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.3.0)
+    ruby-debug-base (0.10.3)
+      linecache (>= 0.3)
     ruby-ole (1.2.10.1)
     spreadsheet (0.6.4.1)
       ruby-ole
@@ -22,5 +28,7 @@ PLATFORMS
 
 DEPENDENCIES
   google-spreadsheet-ruby!
+  highline
   json
+  ruby-debug
   spreadsheet

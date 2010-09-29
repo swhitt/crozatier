@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
     root: 'stuff',
     idProperty: 'slug',
     fields: [
-    'slug', 'category', 'french_category', 'name', 'french_name', 'brand', 'model', 'details', 'french_details', 
+    'slug', 'sold', 'category', 'french_category', 'name', 'french_name', 'brand', 'model', 'details', 'french_details', 
     'rest_localized', 'docs', 'purchase_date', 'original_cost', 'asking_cost', 'delta', 'percent_discount']
   });
   var store = new Ext.data.GroupingStore({
@@ -79,9 +79,9 @@ jQuery(document).ready(function($) {
       var stuffTplMarkup;
       
       if(Crozatier.lang == 'en') {
-        stuffTplMarkup = [
-          '<h1>{name}</h1>',
-          '<p>{details}</p>',
+        stuffTplMarkup = ['<h1>{name}</h1>'];
+        if(r.data.sold == 'yes') {stuffTplMarkup.push('<h2> SOLD! </h2>')}
+        stuffTplMarkup.push('<p>{details}</p>',
           '<table class="sell-figs">',
           '<tr class="even"><td>Brand</td><td>{brand}</td></tr>',
           '<tr class="odd"><td>Model</td><td>{model}</td></tr>',
@@ -90,14 +90,14 @@ jQuery(document).ready(function($) {
           '<tr class="even"><td>Original Cost</td><td>{original_cost}</td></tr>',
           '<tr class="odd"><td>Asking Cost</td><td>{asking_cost}</td></tr>',
           '</table>',
-          '<div class ="rest-desc" id="{slug}-rest"></div>'
-        ];
+          '<div class ="rest-desc" id="{slug}-rest"></div>');
       } else {
         if(r.data.docs == 'yes') {r.data.docs = 'oui'}
         if(r.data.docs == 'no') {r.data.docs = 'non'}
-        stuffTplMarkup = [
-          '<h1>{french_name}</h1>',
-          '<p>{french_details}</p>',
+        stuffTplMarkup = ['<h1>{french_name}</h1>'];
+        if(r.data.sold == 'yes') {stuffTplMarkup.push('<h2> VENDU ! </h2>')}
+        
+        stuffTplMarkup.push('<p>{french_details}</p>',
           '<table class="sell-figs">',
           '<tr class="even"><td>Marque</td><td>{brand}</td></tr>',
           '<tr class="odd"><td>Modèle</td><td>{model}</td></tr>',
@@ -106,8 +106,7 @@ jQuery(document).ready(function($) {
           '<tr class="even"><td>Le coût initial</td><td>{original_cost}</td></tr>',
           '<tr class="odd"><td>Coût</td><td>{asking_cost}</td></tr>',
           '</table>',
-          '<div class ="rest-desc" id="{slug}-rest"></div>'
-        ];
+          '<div class ="rest-desc" id="{slug}-rest"></div>');
       }
 
       var stuffTpl = new Ext.Template(stuffTplMarkup);

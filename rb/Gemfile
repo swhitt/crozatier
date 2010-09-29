@@ -1,8 +1,11 @@
 source "http://rubygems.org"
-gem 'google-spreadsheet-ruby', :git => "http://github.com/swhitt/google-spreadsheet-ruby.git", :branch => 'nokogiri-and-fixes'
+#gem 'google-spreadsheet-ruby', :git => "http://github.com/swhitt/google-spreadsheet-ruby.git", :branch => 'nokogiri-and-fixes'
+gem 'google-spreadsheet-ruby', :path => '/Users/swhitt/Code/personal/google-spreadsheet-ruby'
+
 gem 'json'
 gem 'spreadsheet'
+gem 'highline'
 
-# group :development do
-#   gem 'ruby-debug'
-# end
+group :development do
+  gem 'ruby-debug'
+end
