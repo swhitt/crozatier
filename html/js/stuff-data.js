@@ -103,7 +103,7 @@ Crozatier = {}; Crozatier.stuff = [
     "category": "1 - Kitchen Appliances",
     "delta": "",
     "details": "Includes a countertop",
-    "asking_cost": "€ 400",
+    "asking_cost": "€ 250",
     "percent_discount": "",
     "french_category": "1 - Appareils de cuisine",
     "purchase_date": "Nov 2009",

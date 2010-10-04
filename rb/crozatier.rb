@@ -11,7 +11,8 @@ cc = GoogleSpreadsheetJsonifier.new(File.dirname(__FILE__) + "/.crozatier_auth.t
 cc.process
 cc.write_to_file(File.dirname(__FILE__) + "/../html/js/stuff-data.js")
 
-english_cols =  [{:index => 'name', :header => 'Name', :width => 20}, 
+english_cols =  [{:index => 'name', :header => 'Name', :width => 20},
+                  {:index => 'sold', :header => 'Sold?', :width => 10},
                   {:index => 'brand', :header => 'Brand', :width => 18}, 
                   {:index => 'model', :header => 'Model', :width => 15},
                   {:index => 'original_cost', :header => 'Original Cost', :width => 15},
@@ -20,6 +21,7 @@ english_cols =  [{:index => 'name', :header => 'Name', :width => 20},
                   {:index => 'details', :header => 'Additional Details', :width => 100, :nuke_breaks => true}]
                   
 french_cols =  [{:index => 'french_name', :header => 'Nom', :width => 20}, 
+                {:index => 'sold', :header => 'Vendu?', :width => 10},
                 {:index => 'brand', :header => 'Marque', :width => 18}, 
                 {:index => 'model', :header => 'Modèle', :width => 15},
                 {:index => 'original_cost', :header => 'Le coût initial', :width => 15},

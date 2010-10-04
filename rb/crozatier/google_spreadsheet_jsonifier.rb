@@ -2,6 +2,11 @@ require 'google_spreadsheet'
 require 'yaml'
 require 'json'
 
+# 
+# 
+# Author:: Steve Whittaker
+# Website:: http://github.com/swhitt/crozatier/blob/master/rb/crozatier/google_spreadsheet_jsonifier.rb
+
 class GoogleSpreadsheetJsonifier
   attr_accessor :session, :spreadsheet, :ws, :table, :processed_recs
   

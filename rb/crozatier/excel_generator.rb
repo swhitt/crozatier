@@ -1,5 +1,10 @@
 require 'spreadsheet'
 
+# 
+# 
+# Author:: Steve Whittaker
+# Website:: http://github.com/swhitt/crozatier/blob/master/rb/crozatier/excel_generator.rb
+
 class ExcelGenerator
   def initialize(data)
     Spreadsheet.client_encoding = 'UTF-8'
