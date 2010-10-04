@@ -16,7 +16,7 @@ Crozatier = {}; Crozatier.stuff = [
     "docs": "",
     "french_name": "Four",
     "rest_localized": "",
-    "sold": ""
+    "sold": "yes"
   },
   {
     "brand": "VIVA",
@@ -35,7 +35,7 @@ Crozatier = {}; Crozatier.stuff = [
     "docs": "yes",
     "french_name": "Frigo / Congélateur",
     "rest_localized": "",
-    "sold": ""
+    "sold": "yes"
   },
   {
     "brand": "Siemens",
@@ -54,7 +54,7 @@ Crozatier = {}; Crozatier.stuff = [
     "docs": "yes",
     "french_name": "Lave-vaisselle",
     "rest_localized": "",
-    "sold": ""
+    "sold": "yes"
   },
   {
     "brand": "Siemens",
@@ -73,7 +73,7 @@ Crozatier = {}; Crozatier.stuff = [
     "docs": "",
     "french_name": "Lave-linge séchant",
     "rest_localized": "",
-    "sold": ""
+    "sold": "yes"
   },
   {
     "brand": "Glem",
@@ -92,7 +92,7 @@ Crozatier = {}; Crozatier.stuff = [
     "docs": "yes",
     "french_name": "Table de Cuisson (en verre)",
     "rest_localized": "",
-    "sold": ""
+    "sold": "yes"
   },
   {
     "brand": "Cuisines Mondial Kit",
@@ -111,7 +111,7 @@ Crozatier = {}; Crozatier.stuff = [
     "docs": "",
     "french_name": "Armoires de cuisine",
     "rest_localized": "",
-    "sold": ""
+    "sold": "yes"
   },
   {
     "brand": "VIVA",
@@ -130,7 +130,7 @@ Crozatier = {}; Crozatier.stuff = [
     "docs": "",
     "french_name": "Hotte de cuisine",
     "rest_localized": "",
-    "sold": ""
+    "sold": "yes"
   },
   {
     "brand": "Whirlpool",
@@ -149,7 +149,7 @@ Crozatier = {}; Crozatier.stuff = [
     "docs": "",
     "french_name": "Micro-onde",
     "rest_localized": "",
-    "sold": ""
+    "sold": "yes"
   },
   {
     "brand": "Cuisinart",
@@ -168,7 +168,7 @@ Crozatier = {}; Crozatier.stuff = [
     "docs": "yes",
     "french_name": "Gril sandwich",
     "rest_localized": "",
-    "sold": ""
+    "sold": "yes"
   },
   {
     "brand": "Kenwood",
